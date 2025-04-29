@@ -24,3 +24,10 @@ public class Main {
 
         t1.start();
         t2.start();
+
+        for (int i = 1; i <= 10; i++) {
+            if (pikachu.getHp() == 0 || snivy.getHp() == 0) {
+                break;
+            }
+
+            System.out.println("\n--- Round " + i + " ---");
