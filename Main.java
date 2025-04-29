@@ -31,3 +31,12 @@ public class Main {
             }
 
             System.out.println("\n--- Round " + i + " ---");
+
+            try {
+                Thread.sleep(1000); // Wait for actions to play out
+            } catch (InterruptedException e) {
+                System.out.println("Main thread interrupted.");
+            }
+        }
+    }
+}
